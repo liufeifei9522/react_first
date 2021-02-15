@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import Login from './pages/Login'
 import {BrowserRouter,Route,Switch} from 'react-router-dom'
+import Login from './pages/Login'
+import Admin from './pages/Admin'
+
 /*
 应用根组件
 */
@@ -11,6 +13,7 @@ class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route path='/' component={Login}></Route>
+          <Route path='/admin' component={Admin}></Route>
         </Switch>
       </BrowserRouter>
      )
